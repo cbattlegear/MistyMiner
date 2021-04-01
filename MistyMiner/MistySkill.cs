@@ -568,6 +568,7 @@ namespace MistyMiner
 			}
 			catch (Exception ex)
 			{
+				alreadyRunning = false;
 				_misty.SendDebugMessage($"error: {ex.Message}", null);
 				_misty.SendDebugMessage("Picture processing failed", null);
 			}
